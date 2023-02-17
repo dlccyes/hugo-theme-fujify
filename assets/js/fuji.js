@@ -175,3 +175,39 @@ if (openMenu) {
     }
   });
 }
+
+
+// function getCookie(key) {
+//   let arr, reg = new RegExp("(^| )" + key + "=([^;]*)(;|$)");
+//   if (arr = document.cookie.match(reg))
+//     return unescape(arr[2]);
+//   else
+//     return null;
+// }
+
+
+// let countryClubs = document.getElementsByClassName("countryclub")
+// for (let club of countryClubs) {
+//   if (getCookie("marsey") == "TCorGTFO") {
+//     // set class countryclub visible
+//     club.setAttribute("marsey-text", "");
+//     club.setAttribute(
+//       "style", 
+//       "visibility: visible;"+
+//       "height: auto;"+
+//       "color: inherit;"+
+//       "text-shadow: inherit;"+
+//       "user-select: text;"
+//     );
+//   } else {
+//     club.setAttribute("marsey-text", "Enter the passphrase in cookie or GTFO"); 
+//     club.setAttribute(
+//       "style", 
+//       "visibility: visible;"+
+//       "height: auto;"+
+//       "color: transparent;"+
+//       "text-shadow: 0 0 10px rgba(0,0,0,0.5);"+
+//       "user-select: none;"
+//     );
+//   }
+// }

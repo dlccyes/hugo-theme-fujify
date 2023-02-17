@@ -18,7 +18,9 @@
             <div class="col-12 col-md-9 float-left content">
                 {{ block "main" . }}{{ end }}
             </div>
-            {{ partial "sidebar.html" . }}
+            <aside class="col-12 col-md-3 float-left sidebar">
+              {{ partial "sidebar.html" . }}
+            </aside>
         </div>
         {{ partial "components.html" . }}
     </main>

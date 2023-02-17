@@ -18,15 +18,29 @@
     {{ "<% for(var i = 0; i < $data.length; i++){ %>" | safeHTML }}
     <div class="post">
         <h3 class="post-item post-title-archive">
-            <a href="<%= $data[i].item.permalink %>">{{ "<%= $data[i].item.title %>" | safeHTML }}</a>
+            <a href="<%= $data[i].item.permalink %>">
+              {{ "<%= $data[i].item.title %>" | safeHTML }}
+            </a>
         </h3>
-        <div class="post-item post-meta-archive">
+        <!-- 
+        <div class="post-item post-summary markdown-body">
+          {{- "<% if ($data[i].item.truncated){ %>" | safeHTML -}}
+            {{- "<%= $data[i].item.summary %>" | safeHTML -}}
+            {{ "<p> hahaha</p>" | safeHTML }}
+          {{- "<% } else { %>" | safeHTML -}}
+          {{- "<%= $data[i].item.content %>" | safeHTML -}}
+          {{- "<% } %>" | safeHTML }}
+        </div> 
+        -->
+        <div class="post-item post-meta-archive post-meta">
             <span><i class="iconfont icon-today-sharp"></i>&nbsp;{{- "<%= $data[i].item.date %>" | safeHTML -}}</span>
             <span>
                 <i class="iconfont icon-pricetags-sharp"></i>&nbsp;
                 {{- "<% if ($data[i].item.tags && $data[i].item.tags.length > 0) { %>" | safeHTML -}}
                     {{- "<% for(var j = 0; j < $data[i].item.tags.length; j++){ %>" | safeHTML -}}
-                        {{- "<%= $data[i].item.tags[j] %>&nbsp;" | safeHTML -}}
+                      <a href="/tags/<%= $data[i].item.tags[j] %>">
+                        {{- "#<%= $data[i].item.tags[j] %>&nbsp;" | safeHTML -}}
+                      </a>
                     {{- "<% } %>" | safeHTML -}}
                 {{- "<% } else { %>" | safeHTML -}}
                     {{- i18n "postMetaNoTag" -}}
