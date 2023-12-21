@@ -1,12 +1,13 @@
 // Override variables with that file
 @import '_custom'; // Keep that for back-compatibility. This shouldn't be used anymore.
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+TC:wght@400;700&display=swap');
 
-$font-size-0: 2rem !default; // 16px->32px
-$font-size-1: 1.75rem !default; // 16px->28px #
-$font-size-2: 1.5rem !default; // 16px->24px ##
-$font-size-3: 1.25rem !default; // 16px->20px ###
-$font-size-4: 1rem !default; // 16px->16px ####
+
+$font-size-0: 2em !default; // 16px->32px
+$font-size-1: 1.75em !default; // 16px->28px #
+$font-size-2: 1.5em !default; // 16px->24px ##
+$font-size-3: 1.25em !default; // 16px->20px ###
+$font-size-4: 1em !default; // 16px->16px ####
 
 // used primer variables
 // @primer/css/support/variables/misc.scss
@@ -14,14 +15,14 @@ $font-weight-bold: 600;
 $font-weight-semibold: 600;
 $font-weight-normal: 400;
 $font-weight-light: 400;
-$body-font: "Noto Sans TC", -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', 'Arial', 'Helvetica Neue',
+$body-font: Lato, "Noto Sans TC", -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', 'Arial', 'Helvetica Neue',
   'Helvetica', 'PingFang SC', 'Hiragino Sans GB', 'Source Han Sans CN', 'Source Han Sans SC',
   'Microsoft YaHei', 'WenQuanYi Micro Hei', sans-serif !default;
 $mono-font: 'SF Mono', 'Fira Code', 'Consolas', -apple-system, BlinkMacSystemFont, 'SF Pro Text',
   'Segoe UI', 'Arial', 'Helvetica Neue', 'Helvetica', 'PingFang SC', 'Hiragino Sans GB',
   'Source Han Sans CN', 'Source Han Sans SC', 'Microsoft YaHei', 'WenQuanYi Micro Hei', monospace !default;
 $title-font: 'Product Sans', sans-serif !default;
-$body-font-size: 16px !default;
+$body-font-size: 18px !default;
 
 $width-md: 768px;
 
